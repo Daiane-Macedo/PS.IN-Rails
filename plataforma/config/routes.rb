@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   
   resources :user_jogos
-  resources :livros
+  resources :jogos
   resources :users
   resources :consoles
 

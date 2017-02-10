@@ -1,6 +1,7 @@
 class ConsolesController < ApplicationController
   before_action :set_console, only: [:show, :edit, :update, :destroy]
 
+
   # GET /consoles
   # GET /consoles.json
   def index
@@ -61,6 +62,10 @@ class ConsolesController < ApplicationController
     end
   end
 
+  def show
+    @title = "Console"
+  end
+  
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_console

@@ -1,0 +1,12 @@
+<footer>
+	<style> 
+		footer{
+			text-align: center;
+			 background-color:#66B2FF;
+			 height: 100px;
+			 padding-top: 40px;
+			 font-size: 20px;
+		}  	
+	</style>
+		feito por: Daiane Macedo. Treinamento IN JUNIOR
+</footer>
