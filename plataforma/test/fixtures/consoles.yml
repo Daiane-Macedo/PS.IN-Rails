@@ -5,11 +5,13 @@ one:
   midia: MyString
   preco: 1.5
   fabricante: MyString
-  lancamento: 2017-02-08
+  lancamento: MyString
+  date: MyString
 
 two:
   nome: MyString
   midia: MyString
   preco: 1.5
   fabricante: MyString
-  lancamento: 2017-02-08
+  lancamento: MyString
+  date: MyString

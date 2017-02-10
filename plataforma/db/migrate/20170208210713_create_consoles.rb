@@ -5,7 +5,8 @@ class CreateConsoles < ActiveRecord::Migration[5.0]
       t.string :midia
       t.float :preco
       t.string :fabricante
-      t.date :lancamento
+      t.string :lancamento
+      t.string :date
 
       t.timestamps
     end

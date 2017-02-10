@@ -69,6 +69,6 @@ class ConsolesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def console_params
-      params.require(:console).permit(:nome, :midia, :preco, :fabricante, :lancamento)
+      params.require(:console).permit(:nome, :midia, :preco, :fabricante, :lancamento, :date)
     end
 end

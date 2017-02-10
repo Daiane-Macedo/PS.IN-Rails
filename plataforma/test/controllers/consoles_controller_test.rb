@@ -17,7 +17,7 @@ class ConsolesControllerTest < ActionDispatch::IntegrationTest
 
   test "should create console" do
     assert_difference('Console.count') do
-      post consoles_url, params: { console: { fabricante: @console.fabricante, lancamento: @console.lancamento, midia: @console.midia, nome: @console.nome, preco: @console.preco } }
+      post consoles_url, params: { console: { date: @console.date, fabricante: @console.fabricante, lancamento: @console.lancamento, midia: @console.midia, nome: @console.nome, preco: @console.preco } }
     end
 
     assert_redirected_to console_url(Console.last)
@@ -34,7 +34,7 @@ class ConsolesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update console" do
-    patch console_url(@console), params: { console: { fabricante: @console.fabricante, lancamento: @console.lancamento, midia: @console.midia, nome: @console.nome, preco: @console.preco } }
+    patch console_url(@console), params: { console: { date: @console.date, fabricante: @console.fabricante, lancamento: @console.lancamento, midia: @console.midia, nome: @console.nome, preco: @console.preco } }
     assert_redirected_to console_url(@console)
   end
 

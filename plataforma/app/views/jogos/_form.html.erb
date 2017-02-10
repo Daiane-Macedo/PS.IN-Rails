@@ -17,13 +17,13 @@
   </div>
 
   <div class="field">
-    <%= f.label :preco %>
-    <%= f.text_field :preco %>
+    <%= f.label :estilo %>
+    <%= f.text_field :estilo %>
   </div>
 
   <div class="field">
-    <%= f.label :estilo %>
-    <%= f.text_field :estilo %>
+    <%= f.label :preco %>
+    <%= f.text_field :preco %>
   </div>
 
   <div class="field">
@@ -34,14 +34,14 @@
   <div class="field">
   <%= f.collection_select(:console_id, Console.all, :id, :nome) %>
   </div>
- <!--  
-  Antigo
+
+<!--  
+  Campo antigo que necessitava do ID
   <div class="field">
     <%= f.label "ID do console" %>
     <%= f.number_field :console_id %>
   </div>
 -->
-
   <div class="actions">
     <%= f.submit %>
   </div>

@@ -6,9 +6,10 @@
   <thead>
     <tr>
       <th>Nome</th>
-      <th>Preco</th>
       <th>Estilo</th>
+      <th>Preco</th>
       <th>Produtora</th>
+      <th>Console</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -17,9 +18,10 @@
     <% @jogos.each do |jogo| %>
       <tr>
         <td><%= jogo.nome %></td>
-        <td><%= jogo.preco %></td>
         <td><%= jogo.estilo %></td>
+        <td><%= jogo.preco %></td>
         <td><%= jogo.produtora %></td>
+        <td><%= jogo.console.nome %></td>
         <td><%= link_to 'Show', jogo %></td>
         <td><%= link_to 'Edit', edit_jogo_path(jogo) %></td>
         <td><%= link_to 'Destroy', jogo, method: :delete, data: { confirm: 'Are you sure?' } %></td>

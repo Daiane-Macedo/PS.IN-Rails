@@ -2,12 +2,12 @@
 
 one:
   nome: MyString
-  preco: 1.5
   estilo: MyString
+  preco: 1.5
   produtora: MyString
 
 two:
   nome: MyString
-  preco: 1.5
   estilo: MyString
+  preco: 1.5
   produtora: MyString

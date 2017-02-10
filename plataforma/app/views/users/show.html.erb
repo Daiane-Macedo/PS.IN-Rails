@@ -1,14 +1,18 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
-  <%= @user.name %>
+  <strong>Usuário:</strong>
+  <%= @user.nome %>
 </p>
-
-<p>
-  <strong>Password:</strong>
-  <%= @user.password %>
-</p>
+<% @user.user_jogos.each do |user_jogo| %>
+  <% if @user.id == user_jogo.user_id %>
+    <% Jogo.all.each do |jogo| %>
+      <% if user_jogo.jogo_id == jogo.id %>
+        <p><%= jogo.nome %> </p>
+      <% end %>
+    <% end %>
+  <% end %>
+<% end %>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>

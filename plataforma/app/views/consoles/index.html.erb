@@ -10,6 +10,7 @@
       <th>Preco</th>
       <th>Fabricante</th>
       <th>Lancamento</th>
+      <th>Date</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -22,6 +23,7 @@
         <td><%= console.preco %></td>
         <td><%= console.fabricante %></td>
         <td><%= console.lancamento %></td>
+        <td><%= console.date %></td>
         <td><%= link_to 'Show', console %></td>
         <td><%= link_to 'Edit', edit_console_path(console) %></td>
         <td><%= link_to 'Destroy', console, method: :delete, data: { confirm: 'Are you sure?' } %></td>

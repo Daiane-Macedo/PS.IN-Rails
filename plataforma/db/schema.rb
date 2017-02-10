@@ -10,22 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170210050401) do
+ActiveRecord::Schema.define(version: 20170210033150) do
 
   create_table "consoles", force: :cascade do |t|
     t.string   "nome"
     t.string   "midia"
     t.float    "preco"
     t.string   "fabricante"
-    t.date     "lancamento"
+    t.string   "lancamento"
+    t.string   "date"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "jogos", force: :cascade do |t|
     t.string   "nome"
-    t.float    "preco"
     t.string   "estilo"
+    t.float    "preco"
     t.string   "produtora"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -40,10 +41,10 @@ ActiveRecord::Schema.define(version: 20170210050401) do
   end
 
   create_table "users", force: :cascade do |t|
-    t.string   "name"
-    t.string   "password"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "nome"
+    t.string   "password_digest"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
   end
 
 end
